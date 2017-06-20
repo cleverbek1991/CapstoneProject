@@ -1,0 +1,32 @@
+{
+    "orders": [
+    {
+      "isCompleted": false,
+      "order_id": "0",
+      "assignedTo": "TestDriverA",
+      "adress": "Adress A"
+    },
+    {
+      "isCompleted": false,
+      "order_id": "1",
+      "assignedTo": "TestDriverB",
+      "adress": "Adress B"
+    },
+    {
+      "isCompleted": false,
+      "order_id": "3",
+      "assignedTo": "TestDriverA",
+      "adress": "Adress C"
+    }
+  ],
+    "drivers": [
+      {
+        "name" : "TestDriverA",
+        "driver_id": "0"
+      },
+      {
+        "name" : "TestDriverB",
+        "driver_id": "1"
+      }
+    ]
+}

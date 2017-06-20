@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/smiled-map-markers/512/money_marker_pointer_position_emotion_emoticon_smile-256.png"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>$Manager</title>
+</head>
+
+<body>
+    <div ng-app="manager">
+        <div ng-include="'partials/navbar.html'"></div>
+        <div ng-view></div>
+    </div>
+    <script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.priceformat.min.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/lodash/lodash.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script type="text/javascript" src="./lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./lib/node_modules/firebase/firebase.js"></script>
+    <script type="text/javascript" src="./app/app.js"></script>
+    <script type="text/javascript" src="./app/values/fb-creds.js"></script>
+    <!--Factories-->
+    <script type="text/javascript" src="./app/factories/authFactory.js"></script>
+    <script type="text/javascript" src="./app/factories/dataFactory.js"></script>
+    <!--Controllers-->
+    <script type="text/javascript" src="./app/controllers/mapCtrl.js"></script>
+    <script type="text/javascript" src="./app/controllers/storeCtrl.js"></script>
+    <script type="text/javascript" src="./app/controllers/orderListCtrl.js"></script>
+    <script type="text/javascript" src="./app/controllers/orderCtrl.js"></script>
+    <script type="text/javascript" src="./app/controllers/driverACtrl.js"></script>
+    <script type="text/javascript" src="./app/controllers/driverBCtrl.js"></script>
+
+</body>
+
+</html>
