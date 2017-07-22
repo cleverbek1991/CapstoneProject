@@ -24,13 +24,13 @@ app.config(function($routeProvider) {
 		templateUrl: 'partials/orderDetail.html',
 		controller: 'orderCtrl'
 	}).
-	when('/driverA', {
-		templateUrl: 'partials/driverAView.html',
-		controller: 'driverACtrl'
-	})
-	.when('/driverB', {
-		templateUrl: 'partials/driverBView.html',
-		controller: 'driverBCtrl'
+	when('/drivers', {
+		templateUrl: 'partials/driverList.html',
+		controller: 'driverListCtrl'
+	}).
+	when('/drivers/:driverID', {
+		templateUrl: 'partials/driverView.html',
+		controller: 'driverCtrl'
 	}).
 	otherwise('/');
 });

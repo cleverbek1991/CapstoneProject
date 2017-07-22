@@ -79,7 +79,7 @@ app.factory("DataFactory", function($q, $http, FBCreds) {
                 .then((driverObj) => {
                     let allDrivers = driverObj.data;
                     Object.keys(allDrivers).forEach((key) => {
-                        allDrivers[key].id = key;
+                        allDrivers[key].driver_id = key;
                         drivers.push(allDrivers[key]);
                     });
                     resolve(drivers);
@@ -90,13 +90,53 @@ app.factory("DataFactory", function($q, $http, FBCreds) {
         });
     };
 
+    const removeOrder = (orderID) => {
+        return $q((resolve, reject) => {
+            $http.delete(`${FBCreds.databaseURL}/orders/${orderID}.json`)
+                .then((response) => {
+                    resolve(response);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        });
+    };
+
+    const deleteDriver = (driverID) => {
+        return $q((resolve, reject) => {
+            $http.delete(`${FBCreds.databaseURL}/drivers/${driverID}.json`)
+                .then((response) => {
+                    resolve(response);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        });
+    };
+
+    const addDriver = (newDriver) => {
+        let driverObj = JSON.stringify(newDriver);
+        return $q((resolve, reject) => {
+            $http.post(`${FBCreds.databaseURL}/drivers.json`, driverObj)
+                .then((obj) => {
+                    resolve(obj);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        });
+    };
+
     return {
+        addDriver,
         addOrder,
+        deleteDriver,
         editOrder,
         getOrder,
         getDriversOrder,
         getOrderList,
-        getDrivers
+        getDrivers,
+        removeOrder
     };
 
 });

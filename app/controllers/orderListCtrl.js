@@ -21,19 +21,16 @@ app.controller('orderListCtrl', function($scope, DataFactory, $location, $routeP
                         }
                     }
                 }
-                let sum = array.reduce((a, b) => a + b, 0);
-                let sumString = sum.toString();
-                let abs = sumString.slice(0, -2) + '.' + sumString.slice(-2);
+                let sum = array.reduce((a, b) => a + b, 0).toString();
+                let abs = sum.slice(0, -2) + '.' + sum.slice(-2);
                 $scope.total = abs;
 
-                let sumCash = arrayCash.reduce((a, b) => a + b, 0);
-                let sumStringCash = sumCash.toString();
-                let cash = sumStringCash.slice(0, -2) + '.' + sumStringCash.slice(-2);
+                let sumCash = arrayCash.reduce((a, b) => a + b, 0).toString();
+                let cash = sumCash.slice(0, -2) + '.' + sumCash.slice(-2);
                 $scope.totalCash = cash;
 
-                let sumCharge = arrayCharge.reduce((a, b) => a + b, 0);
-                let sumStringCharge = sumCharge.toString();
-                let charge = sumStringCharge.slice(0, -2) + '.' + sumStringCharge.slice(-2);
+                let sumCharge = arrayCharge.reduce((a, b) => a + b, 0).toString();
+                let charge = sumCharge.slice(0, -2) + '.' + sumCharge.slice(-2);
                 $scope.totalCharge = charge;
             });
     };

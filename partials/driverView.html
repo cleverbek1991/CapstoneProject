@@ -3,11 +3,13 @@
         <div class="panel-heading">
             <h3 class="panel-title">Order List</h3>
         </div>
-        <div class="panel-body" ng-repeat="order in orders" ng-if="order.driver_id == driverB">
+        <div class="panel-body" ng-repeat="order in orders" ng-if="order.driver_id == driverID">
             <a ng-href="#!/orders/{{order.id}}"><div class="col-md-5">Address: {{order.address}}
                 <br>{{order.address_details}}</div></a>
             <div class="col-md-4">Payment Type: {{order.payment_type}}</div>
-            <div class="col-md-3">Total: <strong>$ {{order.total}}</strong><br>Tip: <strong>$ {{order.tip}}</strong></div>
+            <div class="col-md-3">Total: <strong>$ {{order.total}}</strong><br>Tip: <strong>$ {{order.tip}}</strong>
+            <!-- <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addTipModal">Add Tip</button> -->
+            </div>
         </div>
         <div class="panel panel-default col-md-12">Total sales: <strong>$ {{sum}}</strong></div>
     </div>
@@ -20,8 +22,8 @@
             Cash Sales: <strong>$ {{cashTotal}}</strong><br>
             Card Sales: <strong>$ {{cardTotal}}</strong><br>
             Tips: <strong>$ {{tipTotal}}</strong><br>
-            Delivery:<strong> {{run}}</strong><br>
-            Hour:<strong></strong></div>
+            Completed:<strong> {{run}}</strong><br>
+            <!-- Hour:<strong> 6</strong></div> -->
         </div>
     </div>
 </div>

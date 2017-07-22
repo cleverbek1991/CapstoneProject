@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('mapCtrl', function($scope, uiGmapIsReady, DataFactory, $location, $routeParams, $route, $window) {
+app.controller('mapCtrl', function($scope, uiGmapIsReady, DataFactory, $location) {
     // Google Map API Stuff Starts Here
     var directionsDisplay,
         directionsService,

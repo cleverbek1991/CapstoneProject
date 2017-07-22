@@ -1,24 +1,42 @@
 <div class="container">
     <div class="panel panel-default col-md-12">
         <div class="panel-heading">
-            <h1>ORDER VIEW</h1>
+            <h1>ORDER DETAILS</h1>
         </div>
         <div class="panel-body">
             <ul class="list-group">
-                <li class="list-group-item">Order Status</li>
-                <li class="list-group-item">Address: {{order.address}}</li>
+                <!-- <li class="list-group-item">Order Status:</li> -->
+                <li id="input" class="list-group-item">Address: {{order.address}}
+                    <br>{{order.address_details}}</li>
                 <li class="list-group-item">Total: {{order.total}}</li>
                 <li class="list-group-item">Tip: {{order.tip}}</li>
-                <li class="list-group-item">
-                    <div ng-hide="order.status">
-                        <label>Assign An Order To A Driver</label>
-                        <select class="form-control" ng-model="items.driver_id">
-                                <option value="{{driver.driver_id}}" ng-repeat="driver in drivers">{{driver.name}}</option>
-                        </select>
-                        <input class="btn btn-default" type="submit" value="Assign" ng-model="items.status" ng-click="assignOrder(order.id)">
-                    </div>
+                <li class="list-group-item" ng-hide="order.status">
+                    <label>Assign An Order To A Driver</label>
+                    <select class="form-control" ng-model="items.driver_id">
+                        <option value="{{driver.driver_id}}" ng-repeat="driver in drivers">{{driver.name}}</option>
+                    </select>
+                    <button class="btn btn-success glyphicon glyphicon-ok" type="button" value="Assign" ng-model="items.status" ng-click="assignOrder(order.id)"></button>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-remove" ng-click="deleteOrder(order.id)"></button>
                 </li>
             </ul>
+        </div>
+        <div class="panel-body">
+            <div class="angular-google-map-container">
+                <script id="searchbox.tpl.html" type="text/ng-template">
+                    <input type="text" placeholder="Search">
+                </script>
+                <ui-gmap-google-map center='map.center' zoom='map.zoom' options='options'>
+                    <!-- <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker> -->
+                </ui-gmap-google-map>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-offset-1 col-sm-4">
+                            <button class="btn btn-default" ng-click="getDirections()">Get Directions</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="directionsList" ng-show="directions.showList" class="panel panel-primary col-md-8"></div>
+            </div>
         </div>
     </div>
 </div>

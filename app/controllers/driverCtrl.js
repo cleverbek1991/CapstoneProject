@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('driverACtrl', function($scope, DataFactory) {
+app.controller("driverCtrl", function($scope, $route, DataFactory, $routeParams) {
 
     $scope.orderList = function() {
         DataFactory.getOrderList()
@@ -12,7 +12,7 @@ app.controller('driverACtrl', function($scope, DataFactory) {
                     tipArray = [],
                     tip;
                 for (let i in orderObj) {
-                    if (orderObj[i].driver_id === '0') {
+                    if (orderObj[i].driver_id === $routeParams.driverID) {
                         let total = parseInt(orderObj[i].total.split('.').join(''));
                         if (orderObj[i].tip === '') {
                             tip = 0;
@@ -46,10 +46,12 @@ app.controller('driverACtrl', function($scope, DataFactory) {
         DataFactory.getDrivers()
             .then((driverObj) => {
                 $scope.drivers = driverObj;
-                $scope.driverA = '0';
+                $scope.driverID = $routeParams.driverID;
             });
     };
 
     $scope.orderList();
     $scope.driver();
+
+
 });
