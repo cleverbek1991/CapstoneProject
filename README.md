@@ -10,9 +10,9 @@ In order to run this app locally on your machine you need to follow a few steps 
 
 Before running this app you need to have installed a few things on your terminal.
 
-    1. [npm.](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm "npm Install") To check if you have npm run npm --version in your terminal. If not, follow the link above for steps to install.
+    1. [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm "npm Install") To check if you have npm run npm --version in your terminal. If not, follow the link above for steps to install.
 
-    2. [http-server.](https://www.npmjs.com/package/http-server) If you don't already have a local server, run npm install http-server. Once installed all you have to do is run hs in the root folder of the project to start hosting. You'll visit localhost:8080 in your broswer to see everything running.
+    2. [http-server](https://www.npmjs.com/package/http-server) If you don't already have a local server, run npm install http-server. Once installed all you have to do is run hs in the root folder of the project to start hosting. You'll visit localhost:8080 in your broswer to see everything running.
 
 ## Installing
 
@@ -53,4 +53,3 @@ app.constant('FBCreds', {
     * Grunt - Javascript task runner.
 
     * JQuery - The Write Less, Do More, JavaScript Library.
-    
