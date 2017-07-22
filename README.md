@@ -10,21 +10,21 @@ In order to run this app locally on your machine you need to follow a few steps 
 
 Before running this app you need to have installed a few things on your terminal.
 
-    1. [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm "npm Install") To check if you have npm run npm --version in your terminal. If not, follow the link above for steps to install.
+1. [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm "npm Install") To check if you have npm run npm --version in your terminal. If not, follow the link above for steps to install.
 
-    2. [http-server](https://www.npmjs.com/package/http-server) If you don't already have a local server, run npm install http-server. Once installed all you have to do is run hs in the root folder of the project to start hosting. You'll visit localhost:8080 in your broswer to see everything running.
+2. [http-server](https://www.npmjs.com/package/http-server) If you don't already have a local server, run npm install http-server. Once installed all you have to do is run hs in the root folder of the project to start hosting. You'll visit localhost:8080 in your broswer to see everything running.
 
 ## Installing
 
-    1. Fork and clone the repo onto your machine.
+1. Fork and clone the repo onto your machine.
 
-    2. cd into the /lib folder and run npm install to download all the required dependencies.
+2. cd into the /lib folder and run npm install to download all the required dependencies.
 
-    3. You will need to get an API key from Google Maps in order to utilize location feature. To do that:
+3. You will need to get an API key from Google Maps in order to utilize location feature. To do that:
 
-    4. You will also need an API key and a firebase project.
+4. You will also need an API key and a firebase project.
 
-    5. Once you have created a firebase project, Create a credentials directory inside of the app directory. Create a file name "fb-creds.js" inside of the values directory, and paste the following code into your fb-creds.js. Replace "YourAPIKey" and "YourFirebaseAccount" with your API Key and project name from firebase.
+5. Once you have created a firebase project, Create a credentials directory inside of the app directory. Create a file name "fb-creds.js" inside of the values directory, and paste the following code into your fb-creds.js. Replace "YourAPIKey" and "YourFirebaseAccount" with your API Key and project name from firebase.
 
 ``` javascript
 'use strict';
@@ -40,16 +40,16 @@ app.constant('FBCreds', {
 # Built With
 
 
-    * Google Maps API - Publicly available API.
+* Google Maps API - Publicly available API.
 
-    * Bootstrap - A modern responsive CSS framework based on Material Design by Google.
+* Bootstrap - A modern responsive CSS framework based on Material Design by Google.
 
-    * Angularjs - What HTML would have been, had it been designed for building web-apps.
-    
-    * Angular Google Maps - is a set of directives to integrate Google Maps into your applications.
+* Angularjs - What HTML would have been, had it been designed for building web-apps.
 
-    * JS Hint - A tool that helps to detect errors and potential problems in your JavaScript code.
+* Angular Google Maps - is a set of directives to integrate Google Maps into your applications.
 
-    * Grunt - Javascript task runner.
+* JS Hint - A tool that helps to detect errors and potential problems in your JavaScript code.
 
-    * JQuery - The Write Less, Do More, JavaScript Library.
+* Grunt - Javascript task runner.
+
+* JQuery - The Write Less, Do More, JavaScript Library.
