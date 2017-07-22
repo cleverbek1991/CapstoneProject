@@ -20,7 +20,7 @@ Before running this app you need to have installed a few things on your terminal
 
 2. cd into the /lib folder and run npm install to download all the required dependencies.
 
-3. You will need to get an API key from Google Maps in order to utilize location feature. To do that:
+3. You will need to get an API key from Google Maps in order to utilize location feature.
 
 4. You will also need an API key and a firebase project.
 
