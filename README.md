@@ -40,16 +40,16 @@ app.constant('FBCreds', {
 # Built With
 
 
-* Google Maps API - Publicly available API.
+* [Google Maps API](https://www.youtube.com/) - Publicly available API.
 
-* Bootstrap - A modern responsive CSS framework based on Material Design by Google.
+* [Bootstrap](http://getbootstrap.com/getting-started/) - A modern responsive CSS framework based on Material Design by Google.
 
-* Angularjs - What HTML would have been, had it been designed for building web-apps.
+* [Angularjs](https://angularjs.org/) - What HTML would have been, had it been designed for building web-apps.
 
-* Angular Google Maps - is a set of directives to integrate Google Maps into your applications.
+* [Angular Google Maps](http://angular-ui.github.io/angular-google-maps/#!/) - is a set of directives to integrate Google Maps into your applications.
 
-* JS Hint - A tool that helps to detect errors and potential problems in your JavaScript code.
+* [JS Hint](http://jshint.com/) - A tool that helps to detect errors and potential problems in your JavaScript code.
 
-* Grunt - Javascript task runner.
+* [Grunt](https://gruntjs.com/) - Javascript task runner.
 
-* JQuery - The Write Less, Do More, JavaScript Library.
+* [JQuery](https://jquery.com/) - The Write Less, Do More, JavaScript Library.
