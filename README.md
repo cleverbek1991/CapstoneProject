@@ -53,3 +53,8 @@ app.constant('FBCreds', {
 * [Grunt](https://gruntjs.com/) - Javascript task runner.
 
 * [JQuery](https://jquery.com/) - The Write Less, Do More, JavaScript Library.
+
+
+# Try DEMO NOW
+
+[https://cleverbek1991.github.io/CapstoneProject/](https://cleverbek1991.github.io/CapstoneProject/)
