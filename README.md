@@ -57,4 +57,4 @@ app.constant('FBCreds', {
 
 # Try DEMO NOW
 
-[https://cleverbek1991.github.io/GoogleMaps.AngularJS/](https://cleverbek1991.github.io/GoogleMaps.AngularJS/)
+[https://cleverbek1991.github.io/GoogleMaps.AngularJS/](https://cleverbek1991.github.io/GoogleMaps.AngularJS/#!/store)
