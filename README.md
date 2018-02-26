@@ -1,6 +1,6 @@
-# CapstoneProject - Cash Managaer
+# GoogleMaps.AngularJS
 
-Cash Manager is a web app for Restaurants with Delivery service to Get quick informatin about customer's address and reliable account report for employees. The app will allow you to add, delete a driver and get quick refernce to their Daily account.
+This app will help you to Get quick informatin about customer's address and reliable account report for employees. The app will allow you to add, delete a driver and get quick refernce to their Daily account.
 
 # Getting Started
 
@@ -40,7 +40,7 @@ app.constant('FBCreds', {
 # Built With
 
 
-* [Google Maps API](https://www.youtube.com/) - Publicly available API.
+* [Google Maps API](https://developers.google.com/maps/) - Publicly available API.
 
 * [Bootstrap](http://getbootstrap.com/getting-started/) - A modern responsive CSS framework based on Material Design by Google.
 
@@ -57,4 +57,4 @@ app.constant('FBCreds', {
 
 # Try DEMO NOW
 
-[https://cleverbek1991.github.io/CapstoneProject/](https://cleverbek1991.github.io/CapstoneProject/)
+[https://cleverbek1991.github.io/GoogleMaps.AngularJS/](https://cleverbek1991.github.io/GoogleMaps.AngularJS/)
