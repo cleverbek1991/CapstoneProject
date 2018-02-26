@@ -42,7 +42,7 @@ app.controller('mapCtrl', function($scope, uiGmapIsReady, DataFactory, $location
     };
 
     $scope.directions = {
-        origin: "500 Interstate Boulevard South, Nashville, TN, United States",
+        origin: "501 Broadway, Nashville, TN, United States",
         destination: "",
         showList: false
     };
